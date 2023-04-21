@@ -1,10 +1,10 @@
 # 2D Range Search Benchmarks
 
 
-## Range Tree with Fractional Cascading (forked implementation from github.com/luoyuanlab)
+## Range Tree with Fractional Cascading
 
 
-O(logn) query, O(nlogn) build time
+O(logn) query, O(nlogn) build time. This is an edited fork of an implementation by github.com/luoyuanlab
 
 
 ### Random Case: Search Distance = 500 out of 65535
