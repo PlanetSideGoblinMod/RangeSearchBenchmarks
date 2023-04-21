@@ -1,7 +1,7 @@
 # 2D Range Search Benchmarks
 
 
-## Range Tree with Fractional Cascading (edited implementation from github.com/luoyuanlab)
+## Range Tree with Fractional Cascading (forked implementation from github.com/luoyuanlab)
 
 
 O(logn) query, O(nlogn) build time
@@ -15,5 +15,5 @@ O(logn) query, O(nlogn) build time
 ![](worstcase.png)
 
 
-TODO:
+# TODO:
 Replace sort algorithm in Range Tree with pdqsort or vqsort
