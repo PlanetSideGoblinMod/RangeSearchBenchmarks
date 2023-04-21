@@ -8,7 +8,7 @@ O(logn) query, O(nlogn) build time
 
 
 ### Random Case
-![](randomcase.jpg)
+![](randomcase.png)
 
 ### Worst Case
-![](worstcase.jpg)
+![](worstcase.png)
