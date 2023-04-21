@@ -1,7 +1,7 @@
 # 2D Range Search Benchmarks
 
 
-## Range Tree with Fractional Cascading
+## Range Tree with Fractional Cascading (edited implementation from github.com/luoyuanlab)
 
 
 O(logn) query, O(nlogn) build time
