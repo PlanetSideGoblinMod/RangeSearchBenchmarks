@@ -21,6 +21,9 @@
     <ClInclude Include="rangetreeFC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="pdqsort.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="rangetreeFC.cpp">

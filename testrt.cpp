@@ -47,10 +47,10 @@ int main(int argc, char** argv)
     vector<Point> result;
     Point  from, to;
     int fromx, fromy, tox, toy;
-    fromx = std::max(origin[5000].x-50000, 0);
-    fromy = std::max(origin[5000].y-50000, 0);
-    tox = std::min(origin[5000].x+50000, 65535);
-    toy = std::min(origin[5000].y+50000, 65535);
+    fromx = std::max(origin[5000].x-5000, 0);
+    fromy = std::max(origin[5000].y-5000, 0);
+    tox = std::min(origin[5000].x+5000, 65535);
+    toy = std::min(origin[5000].y+5000, 65535);
     std::cout << "Original Point: " << origin[5000].x << " " << origin[5000].y << std::endl;
     from.x = fromx;
     from.y = fromy;

@@ -99,7 +99,6 @@ static void displayint(size_t p)
 
 
 
-
 static bool xless(const Point& l, const Point& r) 
 {
 	return l.x < r.x;
@@ -126,67 +125,9 @@ typedef bool (*CompFun)(const Point&, const Point&);
 static bool issorted(const vector<Point>& V, CompFun comp)
 {
 	int i;
-//	cout<<int(V.size()-1)<<endl;
 	for(i=0; i< int(V.size()-1) ;i++)
 	{
 		if( comp(V[i+1],V[i]) )  return false;
 	}
 	return true;
 }
-
-static vector<Point> readfile(const string& filename)
-{
-	vector<Point> origin;
-	ifstream indata; 
-
-	indata.open(filename.data()); // opens the file
-		if(!indata) 
-		{ // file couldn't be opened
-			cerr << "Error: file " << filename << " could not be opened" << endl;
-			exit(1);
-		}
-		cout<<"file "<<filename<<" is opened."<<endl; 
-
-
-	uint16_t xin,yin;
-	Point t;
-	while ( indata >>xin>>yin ){
-		t.put_value(xin, yin);
-        origin.push_back(t);
-    };
-    indata.close();
-	return origin;
-}
-
-template <typename T>
-vector<size_t> sort_index(const vector<T> &v, bool (*comp)(const T&,const T&)) {
-
-	// initialize original index locations
-	vector<size_t> idx(v.size());
-	iota(idx.begin(), idx.end(), 0);
-//    for(int i=0;i<v.size();i++)  idx[i]=i;
-
-
-	// sort indexes based on comparing values in v
-	sort(idx.begin(), idx.end(),[&v,&comp](size_t i1, size_t i2) {return (*comp)(v[i1] , v[i2]); });
-
-	return idx;
-}
-
-template <typename T>
-vector<size_t> sort_index(const vector<T> &v,  vector<size_t>& idx) {
-	// sort indexes based on comparing values in v
-	sort(idx.begin(), idx.end(),
-		[&v](size_t i1, size_t i2) {return v[i1] < v[i2]; });
-
-	return idx;
-}
-
-template <typename T>
-vector<size_t> sort_index(const vector<T> &v, vector<size_t>& idx, bool(*comp)(const T&, const T&)) {
-	// sort indexes based on comparing values in v
-	sort(idx.begin(), idx.end(), [&v,&comp](size_t i1, size_t i2) {return (*comp)(v[i1], v[i2]); });
-
-	return idx;
-}
-

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="pdqsort.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="rangetreeFC.h" />
   </ItemGroup>
@@ -128,7 +129,7 @@
       <UseProcessorExtensions>HOST</UseProcessorExtensions>
       <OpenMP>GenerateParallelCode</OpenMP>
       <OpenMPOffloading>GenerateSPIR64CPU</OpenMPOffloading>
-      <Optimization>MaxSpeedHighLevel</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
     </ClCompile>
     <Link>
