@@ -7,7 +7,7 @@
 O(logn) query, O(nlogn) build time. This is an edited fork of an implementation by github.com/luoyuanlab
 
 
-### Random Case: Search Distance = 500 out of 65535
+### Random Case: Search Distance = 5000 out of 65535
 ![](randomcase.png)
 
 
