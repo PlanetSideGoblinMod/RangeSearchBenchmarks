@@ -8,7 +8,7 @@ O(logn) query, O(nlogn) build time. This is an edited fork of an implementation 
 
 ### Versus Boost RTree ###
 1.71x faster Range Search and 2.14x faster build time compared to Boost's RTree
-![](versusBoostRTree.jpg)
+![](versusBoostRTree.png)
 
 
 ### Search Distance = 5000 out of 65535
